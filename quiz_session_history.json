@@ -1,0 +1,72 @@
+[
+  {
+    "question_num": 1,
+    "skill": "Terms",
+    "is_correct": true,
+    "mastery": 0.55,
+    "difficulty": "medium"
+  },
+  {
+    "question_num": 2,
+    "skill": "Rate",
+    "is_correct": true,
+    "mastery": 0.55,
+    "difficulty": "medium"
+  },
+  {
+    "question_num": 3,
+    "skill": "Terms",
+    "is_correct": true,
+    "mastery": 0.5950000000000001,
+    "difficulty": "easy"
+  },
+  {
+    "question_num": 4,
+    "skill": "Rate",
+    "is_correct": false,
+    "mastery": 0.5225,
+    "difficulty": "easy"
+  },
+  {
+    "question_num": 5,
+    "skill": "Rate",
+    "is_correct": false,
+    "mastery": 0.49637499999999996,
+    "difficulty": "easy"
+  },
+  {
+    "question_num": 6,
+    "skill": "Sampling Techniques",
+    "is_correct": false,
+    "mastery": 0.475,
+    "difficulty": "medium"
+  },
+  {
+    "question_num": 7,
+    "skill": "Sampling Techniques",
+    "is_correct": false,
+    "mastery": 0.45125,
+    "difficulty": "medium"
+  },
+  {
+    "question_num": 8,
+    "skill": "Sampling Techniques",
+    "is_correct": true,
+    "mastery": 0.5061249999999999,
+    "difficulty": "medium"
+  },
+  {
+    "question_num": 9,
+    "skill": "Conversion of Fraction Decimals Percents",
+    "is_correct": true,
+    "mastery": 0.55,
+    "difficulty": "medium"
+  },
+  {
+    "question_num": 10,
+    "skill": "Rate",
+    "is_correct": false,
+    "mastery": 0.47155624999999995,
+    "difficulty": "easy"
+  }
+]

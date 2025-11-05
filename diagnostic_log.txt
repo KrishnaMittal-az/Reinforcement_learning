@@ -1,0 +1,67 @@
+[2025-11-05 10:03:30] [INFO] ✅ PASS: Directory: data - Found at C:\Sankhu Codes and Stuff\Others\Other Projects\Revolutionizing-EdTech-Through-AI-main\rl-proj\personalized_learning_rl\data
+[2025-11-05 10:03:30] [INFO] ✅ PASS: Directory: models - Found at C:\Sankhu Codes and Stuff\Others\Other Projects\Revolutionizing-EdTech-Through-AI-main\rl-proj\personalized_learning_rl\models
+[2025-11-05 10:03:30] [INFO] ✅ PASS: Directory: environment - Found at C:\Sankhu Codes and Stuff\Others\Other Projects\Revolutionizing-EdTech-Through-AI-main\rl-proj\personalized_learning_rl\environment
+[2025-11-05 10:03:30] [INFO] ✅ PASS: Directory: agents - Found at C:\Sankhu Codes and Stuff\Others\Other Projects\Revolutionizing-EdTech-Through-AI-main\rl-proj\personalized_learning_rl\agents
+[2025-11-05 10:03:30] [INFO] ✅ PASS: Directory: trainings - Found at C:\Sankhu Codes and Stuff\Others\Other Projects\Revolutionizing-EdTech-Through-AI-main\rl-proj\personalized_learning_rl\trainings
+[2025-11-05 10:03:30] [INFO] ✅ PASS: Directory: plots - Found at C:\Sankhu Codes and Stuff\Others\Other Projects\Revolutionizing-EdTech-Through-AI-main\rl-proj\personalized_learning_rl\plots
+[2025-11-05 10:03:30] [INFO] ✅ PASS: Directory: webapp - Found at C:\Sankhu Codes and Stuff\Others\Other Projects\Revolutionizing-EdTech-Through-AI-main\rl-proj\personalized_learning_rl\webapp
+[2025-11-05 10:03:30] [INFO] ✅ PASS: File: data/questions.csv - Found (107,444 bytes)
+[2025-11-05 10:03:30] [INFO] ✅ PASS: File: data/cleaned_df.csv - Found (35,283,169 bytes)
+[2025-11-05 10:03:30] [INFO] ✅ PASS: File: curriculum_skills.json - Found (4,429 bytes)
+[2025-11-05 10:03:30] [INFO] ✅ PASS: File: requirements.txt - Found (646 bytes)
+[2025-11-05 10:03:30] [INFO] ✅ PASS: File: demo_session.py - Found (9,191 bytes)
+[2025-11-05 10:03:30] [INFO] ✅ PASS: File: simple_quiz.py - Found (12,718 bytes)
+[2025-11-05 10:03:30] [INFO] ✅ PASS: File: data/questions.csv - Loaded successfully - 1000 questions, 7 columns, 174 unique skills
+[2025-11-05 10:03:30] [DEBUG] Questions CSV columns: ['id', 'question_text', 'answer', 'skill', 'difficulty', 'question_type', 'choices']
+[2025-11-05 10:03:31] [INFO] ✅ PASS: File: data/cleaned_df.csv - Loaded successfully - 549,020 rows
+[2025-11-05 10:03:31] [INFO] ✅ PASS: File: curriculum_skills.json - Loaded successfully - 174 skills defined
+[2025-11-05 10:03:31] [DEBUG] Found model: dkt_model_100.keras (3,797,321 bytes)
+[2025-11-05 10:03:31] [DEBUG] Found model: dkt_model_30_max_seq.keras (3,797,321 bytes)
+[2025-11-05 10:03:31] [DEBUG] Found model: dkt_model_pretrained.h5 (20,245,752 bytes)
+[2025-11-05 10:03:31] [DEBUG] Found model: dkt_model_pretrained.keras (20,249,837 bytes)
+[2025-11-05 10:03:31] [DEBUG] Found model: dkt_model_pretrained_384_128.h5 (20,238,832 bytes)
+[2025-11-05 10:03:31] [DEBUG] Found model: dkt_model_pretrained_384_128.keras (20,244,950 bytes)
+[2025-11-05 10:03:31] [DEBUG] Found model: dkt_model_pretrained_seq100.keras (20,249,837 bytes)
+[2025-11-05 10:03:31] [DEBUG] Found model: dkt_model_pretrained_seq150.keras (20,249,837 bytes)
+[2025-11-05 10:03:31] [DEBUG] Found model: dkt_model_pretrained_seq200.keras (20,249,837 bytes)
+[2025-11-05 10:03:31] [DEBUG] Found model: dkt_model_pretrained_seq50.keras (20,249,837 bytes)
+[2025-11-05 10:03:31] [DEBUG] Found model: dkt_model_text_emb.keras (17,078,143 bytes)
+[2025-11-05 10:03:31] [DEBUG] Found model: dkt_model_working.keras (689,384 bytes)
+[2025-11-05 10:03:31] [INFO] ✅ PASS: Models directory contents - Found 12 model files
+[2025-11-05 10:03:39] [WARNING] ⚠️  WARNING: Load model: dkt_model_100.keras - Failed to load - Unable to synchronously open file (file signature not found)
+[2025-11-05 10:03:39] [WARNING] ⚠️  WARNING: Load model: dkt_model_30_max_seq.keras - Failed to load - Unable to synchronously open file (file signature not found)
+[2025-11-05 10:03:39] [WARNING] ⚠️  WARNING: Load model: dkt_model_pretrained.h5 - Failed to load - Unrecognized keyword arguments: ['batch_shape']
+[2025-11-05 10:03:39] [WARNING] ⚠️  WARNING: Load model: dkt_model_pretrained.keras - Failed to load - Unable to synchronously open file (file signature not found)
+[2025-11-05 10:03:39] [WARNING] ⚠️  WARNING: Load model: dkt_model_pretrained_384_128.h5 - Failed to load - Unrecognized keyword arguments: ['batch_shape']
+[2025-11-05 10:03:39] [WARNING] ⚠️  WARNING: Load model: dkt_model_pretrained_384_128.keras - Failed to load - Unable to synchronously open file (file signature not found)
+[2025-11-05 10:03:39] [WARNING] ⚠️  WARNING: Load model: dkt_model_pretrained_seq100.keras - Failed to load - Unable to synchronously open file (file signature not found)
+[2025-11-05 10:03:39] [WARNING] ⚠️  WARNING: Load model: dkt_model_pretrained_seq150.keras - Failed to load - Unable to synchronously open file (file signature not found)
+[2025-11-05 10:03:39] [WARNING] ⚠️  WARNING: Load model: dkt_model_pretrained_seq200.keras - Failed to load - Unable to synchronously open file (file signature not found)
+[2025-11-05 10:03:39] [WARNING] ⚠️  WARNING: Load model: dkt_model_pretrained_seq50.keras - Failed to load - Unable to synchronously open file (file signature not found)
+[2025-11-05 10:03:39] [WARNING] ⚠️  WARNING: Load model: dkt_model_text_emb.keras - Failed to load - Unable to synchronously open file (file signature not found)
+[2025-11-05 10:03:41] [INFO] ✅ PASS: Load model: dkt_model_working.keras - Successfully loaded - 166,721 parameters
+[2025-11-05 10:03:41] [SUMMARY] Models loaded: 1/12
+[2025-11-05 10:03:50] [INFO] ✅ PASS: Import QuestionSelectionEnv - Successfully imported from environment.question_selection_env_main
+[2025-11-05 10:03:50] [ERROR] ❌ FAIL: Initialize QuestionSelectionEnv - Failed to initialize environment
+[2025-11-05 10:03:50] [ERROR] Exception: Failed to load any student model
+[2025-11-05 10:03:50] [ERROR] Traceback: Traceback (most recent call last):
+  File "C:\Sankhu Codes and Stuff\Others\Other Projects\Revolutionizing-EdTech-Through-AI-main\rl-proj\personalized_learning_rl\diagnostic.py", line 256, in test_environment
+    env = QuestionSelectionEnv(
+  File "C:\Sankhu Codes and Stuff\Others\Other Projects\Revolutionizing-EdTech-Through-AI-main\rl-proj\personalized_learning_rl\environment\question_selection_env_main.py", line 295, in __init__
+    raise RuntimeError("Failed to load any student model")
+RuntimeError: Failed to load any student model
+
+[2025-11-05 10:03:50] [INFO] ✅ PASS: Import stable_baselines3.PPO - PPO successfully imported
+[2025-11-05 10:03:50] [INFO] ✅ PASS: PPO training directories - Found 19 PPO training runs
+[2025-11-05 10:03:50] [INFO] ✅ PASS: Saved teacher models - Found 1 teacher models
+[2025-11-05 10:03:50] [INFO] ✅ PASS: Package: TensorFlow (Deep Learning) - Installed (version: 2.10.1)
+[2025-11-05 10:03:50] [INFO] ✅ PASS: Package: PyTorch - Installed (version: 2.0.1+cpu)
+[2025-11-05 10:03:50] [INFO] ✅ PASS: Package: Hugging Face Transformers - Installed (version: 4.22.1)
+[2025-11-05 10:03:50] [INFO] ✅ PASS: Package: Sentence Transformers - Installed (version: 2.2.2)
+[2025-11-05 10:03:50] [INFO] ✅ PASS: Package: Stable Baselines3 (RL) - Installed (version: 2.1.0)
+[2025-11-05 10:03:50] [INFO] ✅ PASS: Package: Gymnasium (RL environments) - Installed (version: 0.29.1)
+[2025-11-05 10:03:50] [INFO] ✅ PASS: Package: Pandas (Data) - Installed (version: 1.5.3)
+[2025-11-05 10:03:50] [INFO] ✅ PASS: Package: NumPy (Numerical) - Installed (version: 1.23.5)
+[2025-11-05 10:03:50] [INFO] ✅ PASS: Package: Scikit-learn (ML) - Installed (version: 1.0.2)
+[2025-11-05 10:03:50] [INFO] ✅ PASS: Package: Matplotlib (Plotting) - Installed (version: 3.7.1)
+[2025-11-05 10:03:50] [INFO] Diagnostic report saved to diagnostic_report.json

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Quiz Summary</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+</head>
+<body>
+<main>
+    <header>
+        <h1>Session Summary</h1>
+    </header>
+
+    <section>
+        <p><strong>Total questions:</strong> {{ total_questions }}</p>
+        <p><strong>Correct answers:</strong> {{ correct_answers }}</p>
+        <p><strong>Accuracy:</strong> {{ '%.1f'|format(accuracy) }}%</p>
+        <p><strong>Total reward from policy:</strong> {{ '%.2f'|format(total_reward) }}</p>
+    </section>
+
+    <section>
+        <h2>Question Breakdown</h2>
+        {% if history %}
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Question</th>
+                <th>Skill</th>
+                <th>Difficulty</th>
+                <th>Your Answer</th>
+                <th>Expected</th>
+                <th>Correct?</th>
+                <th>Reward</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for row in history %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ row.prompt }}</td>
+                <td>{{ row.skill }}</td>
+                <td>{{ row.difficulty }}</td>
+                <td>{{ row.user_answer }}</td>
+                <td>{{ row.expected_answer }}</td>
+                <td>{% if row.is_correct %}✅{% else %}❌{% endif %}</td>
+                <td>{{ '%.2f'|format(row.reward) }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>No questions answered.</p>
+        {% endif %}
+    </section>
+
+    <section>
+        <form action="{{ url_for('reset_session', session_id=session_id) }}" method="post">
+            <button type="submit">Start Over</button>
+        </form>
+        <p><a href="{{ url_for('index') }}">Return home</a></p>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,31 @@
+# This file contains the exact versions of libraries known to be compatible
+# for the Personalized Learning RL project on Python 3.9.
+
+# Core ML/DL Frameworks
+tensorflow==2.10.1
+protobuf==3.19.6
+numpy==1.23.5
+
+# Hugging Face Ecosystem
+huggingface-hub==0.16.4
+accelerate==0.20.3
+transformers==4.22.1
+sentence-transformers==2.2.2
+
+# Reinforcement Learning
+stable-baselines3[extra]==2.1.0
+gymnasium==0.29.1
+shimmy==0.2.1
+
+# PyTorch (required by sentence-transformers and stable-baselines3)
+torch==2.0.1
+
+# Data Handling and Utilities
+pandas==1.5.3
+scikit-learn==1.0.2
+matplotlib==3.7.1
+bert-score==0.3.13
+textstat==0.7.3
+
+# Web Demo
+Flask==3.0.3

@@ -1,0 +1,64 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+venv_rl/
+env/
+ENV/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+
+# Type checker caches
+.mypy_cache/
+.pytype/
+.ruff_cache/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE / editor settings
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+logs/
+
+# TensorBoard and training outputs
+trainings/PPO_*/
+trainings/events.out.tfevents.*
+
+# Local environment variables
+.env
+.env.*
+
+# Cache / temp data
+cache/
+tmp/
+HOW_TO_RUN.md

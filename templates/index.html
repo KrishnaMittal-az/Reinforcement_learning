@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Personalized Learning Quiz</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+</head>
+<body>
+<main>
+    <header>
+        <h1>Personalized Learning Quiz Demo</h1>
+        <p>Test the adaptive question selector powered by the RL + DKT pipeline.</p>
+    </header>
+    <section>
+        <form action="{{ url_for('start_quiz') }}" method="post">
+            <button type="submit">Start Adaptive Quiz</button>
+        </form>
+    </section>
+</main>
+</body>
+</html>

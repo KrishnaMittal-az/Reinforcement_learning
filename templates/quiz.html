@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Adaptive Quiz</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+</head>
+<body>
+<main>
+    <header>
+        <h1>Adaptive Quiz</h1>
+        {% if agent_available %}
+        <p>Question selected by PPO policy.</p>
+        {% else %}
+        <p>Question selected by heuristic (train and save PPO to enable policy-driven selection).</p>
+        {% endif %}
+    </header>
+
+    <section>
+        {% if question %}
+        <article>
+            <h2>{{ question.prompt }}</h2>
+            <p><strong>Skill:</strong> {{ question.skill }} | <strong>Difficulty:</strong> {{ question.difficulty }} | <strong>Type:</strong> {{ question.question_type }}</p>
+            <form action="{{ url_for('quiz', session_id=session_id) }}" method="post">
+                {% if question.choices %}
+                    {% for option in question.choices %}
+                        <label>
+                            <input type="radio" name="answer" value="{{ option }}" required>
+                            {{ option }}
+                        </label><br>
+                    {% endfor %}
+                {% else %}
+                    <label for="answer">Your Answer</label>
+                    <input id="answer" name="answer" type="text" required>
+                {% endif %}
+                <button type="submit">Submit Answer</button>
+            </form>
+            <p><strong>Steps remaining:</strong> {{ steps_remaining }}</p>
+        </article>
+        {% endif %}
+    </section>
+
+    <section>
+        <h3>Recent History</h3>
+        {% if history %}
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Question</th>
+                    <th>Skill</th>
+                    <th>Difficulty</th>
+                    <th>Your Answer</th>
+                    <th>Expected</th>
+                    <th>Correct?</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in history[-5:] %}
+                <tr>
+                    <td>{{ loop.index0 + 1 }}</td>
+                    <td>{{ row.prompt }}</td>
+                    <td>{{ row.skill }}</td>
+                    <td>{{ row.difficulty }}</td>
+                    <td>{{ row.user_answer }}</td>
+                    <td>{{ row.expected_answer }}</td>
+                    <td>{% if row.is_correct %}✅{% else %}❌{% endif %}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>No answers submitted yet.</p>
+        {% endif %}
+    </section>
+</main>
+</body>
+</html>
