@@ -170,7 +170,8 @@ def run_interactive_quiz(num_questions=10):
     for question_num in range(1, num_questions + 1):
         # Get next question (environment selects adaptively)
         action = env.action_space.sample()  # You can replace with trained model
-        obs, reward, done, info = env.step(action)
+        obs, reward, done, truncated, info = env.step(action)
+        done = done or truncated
         
         question_info = info
         skill = info['skill']

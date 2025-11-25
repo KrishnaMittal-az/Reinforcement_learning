@@ -8,7 +8,7 @@ It simulates a student learning session with the trained teacher agent.
 import pandas as pd
 import numpy as np
 from stable_baselines3 import PPO
-from environment.question_selection_env import QuestionSelectionEnv
+from environment.question_selection_env_main import QuestionSelectionEnv
 import json
 import os
 
@@ -76,7 +76,8 @@ def run_demo_session(num_questions=20, model_path=None, save_history=True):
             action = env.action_space.sample()
         
         # Execute action
-        obs, reward, done, info = env.step(action)
+        obs, reward, done, truncated, info = env.step(action)
+        done = done or truncated
         total_reward += reward
         
         # Track skill improvement

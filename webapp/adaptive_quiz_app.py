@@ -33,7 +33,7 @@ class AdaptiveQuiz:
         if previous_correct is not None:
             # Step the environment with the student's answer
             action = self.env.action_space.sample()  # For demo, we'll use random action
-            obs, reward, done, info = self.env.step(action)
+            obs, reward, done, truncated, info = self.env.step(action)
             
         # Get current question based on environment state
         question_info = self.env.current_question

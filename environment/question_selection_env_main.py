@@ -23,8 +23,8 @@ import textstat
 import tensorflow as tf
 import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
-import gym
-from gym import spaces
+import gymnasium as gym
+from gymnasium import spaces
 from sklearn.metrics.pairwise import cosine_similarity
 
 class QuestionSelectionEnv(gym.Env):

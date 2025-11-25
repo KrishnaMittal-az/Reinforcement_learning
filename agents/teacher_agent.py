@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 os.environ["CUDA_VISIBLE_DEVICES"] = ""
-from environment.question_selection_env import QuestionSelectionEnv
+from environment.question_selection_env_main import QuestionSelectionEnv
 import pandas as pd
 from stable_baselines3 import PPO
 from stable_baselines3.common.env_util import make_vec_env

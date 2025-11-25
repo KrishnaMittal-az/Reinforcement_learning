@@ -1,6 +1,6 @@
 import gymnasium as gym
 from stable_baselines3 import PPO
-from environment.question_selection_env import QuestionSelectionEnv
+from environment.question_selection_env_main import QuestionSelectionEnv
 import pandas as pd
 
 # Load your questions data
